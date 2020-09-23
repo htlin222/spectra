@@ -1,0 +1,106 @@
+/* Ellipsis */
+.asp-alert-container.ellipsized {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-height: 10em;
+}
+
+.icon-add_institutional_page:before {
+    content: '\e80a';
+}
+
+.icon-edit_institutional_page:before {
+    content: '\e802';
+}
+
+.icon-unpublish_institutional_page:before {
+		content: '\e80c';
+}
+
+.icon-delete_institutional_page:before {
+		content: '\e817';
+}
+
+.asp-alert-container .portalMessage {
+	display: inline-block;
+}
+
+/* Make sure that the institutional lead images have an opaque background.*/
+.newsImageContainer {
+	background-color: white;
+}
+
+.leadImage .newsImageContainer {
+	margin: 0px 0px;
+	box-shadow: none;
+	background: rgb(250, 250, 250);
+	padding: 10px;
+}
+
+.leadImage .newsImageContainer img {
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17);
+}
+
+/* Adjust the auto table of contents to take up a max of 30% of the screen */
+.template-document_view .pat-autotoc:not(.autotabs) .autotoc-nav {
+	max-width: 30%;
+}
+
+/* For autotabbing not to interfere with toc because of how the mockup pattern for tabs is shared with autotoc */
+.pat-autotoc.autotabs #sg-content .autotoc-nav a.active, .autotabs #sg-content .autotoc-nav a.active, .pat-autotoc.autotabs #sg-content .autotoc-nav a.active:hover, .autotabs #sg-content .autotoc-nav a.active:hover {
+	background: transparent;
+}
+
+.pat-autotoc.autotabs #sg-content .autotoc-nav a.active {
+	border: none;
+	border-bottom: 1px solid #cccccc;
+}
+
+.pat-autotoc.autotabs #sg-content .autotoc-nav a, .autotabs #sg-content .autotoc-nav a {
+	padding: 0px;
+	margin: 0px;
+	border-radius: 0px;
+}
+
+.pat-autotoc.autotabs #sg-content .autotoc-nav a {
+	line-height: 1.5em;
+}
+
+.pat-autotoc.autotabs #sg-content .autotoc-nav a, .autotabs #sg-content .autotoc-nav a {
+	border: none;
+	background: transparent;
+}
+
+/* Remove bottom border on document byline */
+body.template-document_view #content-core .autotabs .documentByLine,
+body.template-view.portaltype-drug_page #content-core .autotabs .documentByLine {
+  border:none;
+}
+
+/* Make sure indenting on embedded TOC is still working */
+#content-core .pat-autotoc:not(.autotabs) .autotoc-nav .autotoc-level-3 {
+  font-size: 12px;
+  margin: 0 1em 0 24px;
+}
+
+#content-core .pat-autotoc:not(.autotabs) .autotoc-nav .autotoc-level-2 {
+  font-size: 14px;
+  margin: 0 1em 0 12px;
+}
+
+/* Underlining on embedded TOC */
+#sg-content.pat-autotoc:not(.autotabs) .autotoc-nav a[class^="autotoc-level"],
+#content-core #sg-content:not(.autotabs) .autotoc-nav a[class^="autotoc-level"] {
+  border-bottom: 1px solid #cccccc;
+}
+
+/* Borders and width on embedded TOC */
+#content-core .pat-autotoc:not(.autotabs) .autotoc-nav {
+  float: right;
+  min-width: 150px;
+  background-color: #f2f1f1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.17);
+  padding: 6px 12px;
+  margin: 0 0 12px 12px;
+  border: 1px solid #ddd;
+}

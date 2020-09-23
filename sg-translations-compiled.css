@@ -1,0 +1,83 @@
+#portal-languageselector {
+  margin-top: 2em;
+}
+/* Set static heights for fields to avoid misalignment in lieu of handling by overriding the view template.
+    Considering this a part of the theme since presentation is a concern for theming.
+*/
+#babel-edit .field {
+  height: 600px;
+  border: 1px solid #f0f0f0;
+}
+#babel-edit #frame-content .field {
+  overflow: auto;
+}
+#babel-edit #fieldset-default div.mce-edit-area {
+  height: 350px;
+  overflow: auto;
+}
+body:not(.userrole-administrator) #babel-edit div#remoteUrl,
+body:not(.userrole-administrator) #babel-edit div#formfield-form-widgets-remoteUrl,
+body:not(.userrole-administrator) #babel-edit div#IVersionable.changeNote,
+body:not(.userrole-administrator) #babel-edit div#formfield-form-widgets-IVersionable-changeNote {
+  display: none;
+}
+body:not(.userrole-administrator) ul.plone-toolbar-main li#plone-contentmenu-multilingual {
+  display: none !important;
+}
+body.userrole-translator ul.plone-toolbar-main li#plone-contentmenu-multilingual,
+body.userrole-translator ul.plone-toolbar-main li#plone-contentmenu-workflow,
+body.userrole-translator ul.plone-toolbar-main li#plone-contentmenu-actions,
+body.userrole-translator ul.plone-toolbar-main li#contentview-checkout {
+  display: none !important;
+}
+body.userrole-translator #babel-edit #form-target nav.autotoc-nav a {
+  display: none;
+}
+body:not(.userrole-translator) #portal-languageselector {
+  display: none;
+}
+.icon-translator_edit::before {
+  content: '\e802';
+}
+
+table.tablesorter-default.tablesorter tr.tablesorter-hasChildRow td {
+    background: #eee;
+}
+
+table.tablesorter-default tr.tablesorter-childRow td {
+    padding-left: 2em;
+}
+
+table.tablesorter-default tr.tablesorter-hasChildRow:hover td {
+    background: #bfbfbf;
+}
+
+table.tablesorter-default tr.tablesorter-childRow:hover td {
+    background: #d9d9d9;
+}
+
+/* collapsed arrow */
+tr.tablesorter-hasChildRow td i {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid #888;
+  border-right: 4px solid #888;
+  border-left: 4px solid transparent;
+  margin-right: 7px;
+  user-select: none;
+  -moz-user-select: none;
+}
+tr.tablesorter-hasChildRow.collapsed td i {
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #888;
+  border-right: 0;
+  margin-right: 10px;
+}
+
+.tablesorter span.text-muted {
+    color: #777;
+    font-style: oblique;
+}

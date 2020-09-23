@@ -1,0 +1,11 @@
+/* Add dropdown inlining style */
+div.dropdown-inline {
+  display: inline;
+}
+
+.searchFilter .dropdown-menu li a.active:after {
+  content: '✔';
+  font-size: 1.5em;
+  padding: 3px;
+}
+

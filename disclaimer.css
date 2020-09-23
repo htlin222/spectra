@@ -1,0 +1,23 @@
+#viewlet-disclaimer {
+  background: #fff;
+  bottom: 0;
+  display: none;
+  margin: 0 auto;
+  padding: 1em;
+  position: fixed;
+  vertical-align: baseline;
+  width: 100%;
+  z-index: 20180509;
+  color: #4d4d4d;
+  text-align: center;
+  border: 1px solid #4d4d4d;
+}
+.disclaimer-close {
+  cursor: pointer;
+  float: right;
+  padding-right: 2em;
+  position: relative;
+}
+.disclaimer-title {
+  font-weight: bold;
+}
